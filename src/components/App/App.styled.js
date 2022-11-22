@@ -1,22 +1,19 @@
 import styled from '@emotion/styled';
+import background from '../../images/notebook.png';
 
 export const StyledContainer = styled.div`
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50px;
+  transform: translateY(-50%);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  height: 500px;
-  overflow: auto;
-  width: 400px;
-  padding: 40px;
+  height: 480px;
+  width: 360px;
   margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 50px;
+  background-image: url(${background});
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: background-color 400ms ease;
-  &:hover {
-    background-color: lightblue;
-  }
 `;

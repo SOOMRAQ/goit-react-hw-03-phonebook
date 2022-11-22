@@ -1,5 +1,7 @@
-import { StyledList, StyledItem, StyledButton } from './ContactsList.styled';
+import { StyledList, StyledItem } from './ContactsList.styled';
 import PropTypes from 'prop-types';
+import IconButton from 'components/IconButton';
+import { ReactComponent as DeleteIcon } from '../../icons/delete.svg';
 
 const ContactsList = ({ contacts, onDeleteContact }) => {
   return (
@@ -7,10 +9,13 @@ const ContactsList = ({ contacts, onDeleteContact }) => {
       {contacts.map(({ id, name, number }) => {
         return (
           <StyledItem key={id}>
-            <p>{`${name} ${number}`}</p>
-            <StyledButton type="button" onClick={() => onDeleteContact(id)}>
-              Delete
-            </StyledButton>
+            <div>
+              <p>{name}</p>
+              <p>{number}</p>
+            </div>
+            <IconButton type="button" onClick={() => onDeleteContact(id)}>
+              <DeleteIcon width="13" height="13" fill="#fff" />
+            </IconButton>
           </StyledItem>
         );
       })}

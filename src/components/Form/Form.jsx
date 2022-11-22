@@ -55,7 +55,7 @@ class Form extends Component {
           />
         </StyledLabel>
 
-        <StyledButton type="submit">Add contact</StyledButton>
+        <StyledButton type="submit">Save</StyledButton>
       </StyledForm>
     );
   }

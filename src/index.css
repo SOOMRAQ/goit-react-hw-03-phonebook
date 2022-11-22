@@ -11,10 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./images/react-wallpaper.jpg');
+  background-image: url('./images/main-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  font-family: 'Cinzel', serif;
 }
 
 ul {

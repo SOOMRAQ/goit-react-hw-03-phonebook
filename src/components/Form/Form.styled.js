@@ -5,7 +5,6 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 100%;
 `;
 export const StyledLabel = styled.label`
   display: flex;
@@ -16,15 +15,18 @@ export const StyledLabel = styled.label`
 export const StyledInput = styled.input`
   border-radius: 50px;
   border: none;
-  background-color: #e883f7;
-  padding: 5px;
+  background-color: steelblue;
+  padding: 5px 10px;
+  color: white;
+  font-family: inherit;
 
   &:focus {
     outline: 1px solid black;
   }
 `;
 export const StyledButton = styled.button`
-  background: firebrick;
+  font-family: inherit;
+  background: green;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 50px;
